@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>☕ Snack Tracker - Copa</title>
+  <script>
+    // Cole aqui o seu link atual do Cloudflare Tunnel:
+    const URL_SNACK_TRACKER = "https://routines-spirits-split-removable.trycloudflare.com";
+    
+    if (URL_SNACK_TRACKER && !URL_SNACK_TRACKER.includes("SEU-LINK-AQUI")) {
+      window.location.replace(URL_SNACK_TRACKER);
+    }
+  </script>
+  <style>
+    body { font-family: sans-serif; background: #090d16; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; }
+    .card { background: #1e293b; padding: 32px 24px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 320px; }
+    .btn { display: inline-block; margin-top: 15px; padding: 12px 20px; background: #10b981; color: white; text-decoration: none; font-weight: bold; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>☕ Snack Tracker</h2>
+    <p style="color:#94a3b8; font-size:13px; margin-top:8px;">Abrindo a copa...</p>
+    <a id="btn-manual" class="btn" href="#">Entrar no Snack Tracker</a>
+  </div>
+  <script>document.getElementById("btn-manual").href = URL_SNACK_TRACKER;</script>
+</body>
+</html>
