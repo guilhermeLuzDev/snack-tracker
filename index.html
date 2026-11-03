@@ -4,26 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>☕ Snack Tracker - Copa</title>
+  <meta http-equiv="refresh" content="0; url=https://test-auto-link.trycloudflare.com">
   <script>
-    // Cole aqui o seu link atual do Cloudflare Tunnel:
-    const URL_SNACK_TRACKER = "https://organisms-mom-shuttle-pop.trycloudflare.com";
-    
-    if (URL_SNACK_TRACKER && !URL_SNACK_TRACKER.includes("https://organisms-mom-shuttle-pop.trycloudflare.com")) {
-      window.location.replace(URL_SNACK_TRACKER);
-    }
+    window.location.replace("https://test-auto-link.trycloudflare.com");
   </script>
   <style>
-    body { font-family: sans-serif; background: #090d16; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; }
-    .card { background: #1e293b; padding: 32px 24px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 320px; }
-    .btn { display: inline-block; margin-top: 15px; padding: 12px 20px; background: #10b981; color: white; text-decoration: none; font-weight: bold; border-radius: 12px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #090d16;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 36px 24px;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.08);
+      max-width: 320px;
+      width: 100%;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255,255,255,0.1);
+      border-top-color: #10b981;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin: 0 auto 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    h2 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+    p { color: #94a3b8; font-size: 13px; margin-top: 6px; line-height: 1.4; }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #10b981;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+    }
   </style>
 </head>
 <body>
   <div class="card">
+    <div class="spinner"></div>
     <h2>☕ Snack Tracker</h2>
-    <p style="color:#94a3b8; font-size:13px; margin-top:8px;">Abrindo a copa...</p>
-    <a id="btn-manual" class="btn" href="#">Entrar no Snack Tracker</a>
+    <p>Redirecionando para o armário e café da copa...</p>
+    <a id="btn-manual" class="btn" href="https://test-auto-link.trycloudflare.com">Entrar no Snack Tracker</a>
   </div>
-  <script>document.getElementById("btn-manual").href = URL_SNACK_TRACKER;</script>
 </body>
 </html>
